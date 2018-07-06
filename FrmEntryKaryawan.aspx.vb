@@ -90,6 +90,9 @@ Public Class FrmEntryKaryawan
                 TxtNoTelp.Text = DataHdr("NoTelp").ToString
                 TxtLokasiKerja.Text = DataHdr("LokasiKerja").ToString
                 Session("PasFoto") = DataHdr("Foto")
+                If DataHdr("Active") = "0" Then
+                    DisableControls(Form)
+                End If
             End If
             CmdDataHdr.Dispose()
             DataHdr.Close()
@@ -150,6 +153,7 @@ Public Class FrmEntryKaryawan
             CmdDataID.Dispose()
 
         End If
+
     End Sub
     Private Sub BindGridKeluarga()
         Dim UpdateNIK As String = Session("NIK")
@@ -346,6 +350,7 @@ Public Class FrmEntryKaryawan
 
         GridDataRwytPekerjaanMinarta.DataBind()
     End Sub
+
     Protected Sub RblStsNikah_SelectedIndexChanged(sender As Object, e As EventArgs) Handles RblStsNikah.SelectedIndexChanged
         If RblStsNikah.Value <> String.Empty Then
             If RblStsNikah.SelectedItem.Value = "Menikah" Then
@@ -355,6 +360,7 @@ Public Class FrmEntryKaryawan
             End If
         End If
     End Sub
+
     Protected Sub BtnPopUpKeluarga_Click(sender As Object, e As EventArgs) Handles BtnPopUpKeluarga.Click
         TxtActKeluarga.Text = "NEW"
         TxtNoUrutKeluarga.Text = ""
@@ -802,11 +808,16 @@ Public Class FrmEntryKaryawan
                 Dim postedFile As HttpPostedFile = Request.Files(Ctr)
                 If postedFile.ContentLength > 0 Then
                     If postedFile.ContentType.ToLower <> "image/jpeg" And _
-                       postedFile.ContentType.ToLower <> "application/pdf" Then
+                    postedFile.ContentType.ToLower <> "application/pdf" Then
                         LblErr.Text = "Pastikan file yang anda upload memiliki ext. JPG/PDF."
                         ErrMsg.ShowOnPageLoad = True
                         Exit Sub
                     End If
+                End If
+                If postedFile.ContentType.ToLower <> "application/pdf" And postedFile.ContentLength >= 2000000 Then
+                    LblErr.Text = postedFile.FileName & " melebihi ukuran file maximum 2MB."
+                    ErrMsg.ShowOnPageLoad = True
+                    Exit Sub
                 End If
             Next
         End If
@@ -1578,16 +1589,26 @@ Public Class FrmEntryKaryawan
             Session.Remove("ViewJPG")
             Dim SelectRecord As GridViewRow = GridDokumenPendukung.Rows(e.CommandArgument)
 
-            If SelectRecord.Cells(1).Text.Split(".")(1) = "jpg" Then
-                Session("ViewJPG") = "/PDF/Employee/" & Session("NIK") & "/" & _
-                                        SelectRecord.Cells(1).Text
-            ElseIf SelectRecord.Cells(1).Text.Split(".")(1) = "pdf" Then
+            Dim FileSplit() As String = SelectRecord.Cells(1).Text.Split(".")
+            Dim arrayAkhir As Integer = FileSplit.Length - 1
+            If FileSplit(arrayAkhir).ToLower = "pdf" Then
                 Session("ViewPDF") = "/PDF/Employee/" & Session("NIK") & "/" & _
                                         SelectRecord.Cells(1).Text
             Else
-                msgBox1.alert("Format file tidak mendukung untuk dilihat.")
-                Exit Sub
+                Session("ViewJPG") = "/PDF/Employee/" & Session("NIK") & "/" & _
+                                        SelectRecord.Cells(1).Text
             End If
+
+            'If SelectRecord.Cells(1).Text.Split(".")(1) = "jpg" Then
+            '    Session("ViewJPG") = "/PDF/Employee/" & Session("NIK") & "/" & _
+            '                            SelectRecord.Cells(1).Text
+            'ElseIf SelectRecord.Cells(1).Text.Split(".")(1) = "pdf" Then
+            '    Session("ViewPDF") = "/PDF/Employee/" & Session("NIK") & "/" & _
+            '                            SelectRecord.Cells(1).Text
+            'Else
+            '    msgBox1.alert("Format file tidak mendukung untuk dilihat.")
+            '    Exit Sub
+            'End If
             With DialogWindow1
                 .TargetUrl = "FrmView.aspx"
                 .Open()
@@ -1609,10 +1630,35 @@ Public Class FrmEntryKaryawan
             GridDokumenPendukung.DataBind()
             Session("TmpDtDP") = TmpDtDP
         End If
+
     End Sub
     Private Sub DelFile()
         TmpDtDelFile.Columns.AddRange(New DataColumn() {New DataColumn("NamaFile", GetType(String))})
         Session("TmpDtDelFile") = TmpDtDelFile
+    End Sub
+
+    Private Sub DisableControls(control As System.Web.UI.Control)
+
+        For Each c As System.Web.UI.Control In control.Controls
+            ' Get the Enabled property by reflection.
+            Dim type As Type = c.GetType
+            Dim prop As Reflection.PropertyInfo = type.GetProperty("Enabled")
+
+            ' Set it to False to disable the control.
+            If Not prop Is Nothing Then
+                prop.SetValue(c, False, Nothing)
+            End If
+
+            ' Recurse into child controls.
+            If c.Controls.Count > 0 Then
+                Me.DisableControls(c)
+            End If
+        Next
+
+        BtnSaveDataEntry.Visible = False
+        BtnCancelDataEntry.Text = "OK"
+        BtnCancelDataEntry.Enabled = True        
+
     End Sub
 
 End Class

@@ -46,7 +46,7 @@
     <table style="width: 100%">
         <tr>
             <td>
-                <dx:ASPxGridView ID="GridMaster" ClientInstanceName="GridMaster" runat="server" KeyFieldName="NIK" PreviewFieldName="Divisi" EnableRowCache="false" AutoGenerateColumns="true" Theme="MetropolisBlue" Width="100%" OnDataBound="GridMaster_DataBound" OnCustomButtonCallback="GridMaster_CustomButtonCallback" OnPageIndexChanged="GridMaster_PageIndexChanged" EnableCallBacks="false">
+                <dx:ASPxGridView ID="GridMaster" ClientInstanceName="GridMaster" runat="server" KeyFieldName="NIK" PreviewFieldName="Divisi" EnableRowCache="false" AutoGenerateColumns="true" Theme="MetropolisBlue" Width="100%" OnDataBound="GridMaster_DataBound" OnCustomButtonCallback="GridMaster_CustomButtonCallback" EnableCallBacks="false">
                 <SettingsAdaptivity AdaptivityMode="HideDataCells" />
                 <SettingsSearchPanel Visible="true" ShowApplyButton="true" ShowClearButton="true" SearchInPreview="true" />
                 <SettingsPager PageSize="5"></SettingsPager>
@@ -212,8 +212,8 @@
                                                 <Settings AutoFilterCondition="Contains" HeaderFilterMode="CheckedList" />
                                             </dx:GridViewDataTextColumn>
                                         </Columns>
-                                        <Settings ShowFilterRow="True" ShowFooter="true" HorizontalScrollBarMode="Visible" ShowHeaderFilterButton="true" />
-                                        <ClientSideEvents EndCallback="function(s, e) { if (s.cpOpenWindow != null) window.open(s.cpOpenWindow, 'newwindow', 'width=500px, height=600px', 'menubar=no'); }" />
+                                        <Settings ShowFilterRow="True" ShowFooter="true" HorizontalScrollBarMode="Visible" ShowHeaderFilterButton="true" />                                        
+                                        <ClientSideEvents EndCallback="function(s, e) { if (s.cpOpenWindow != null) window.open(s.cpOpenWindow, 'newwindow', 'width=800px, height=600px', 'menubar=no'); }" />
                                     </dx:ASPxGridView>
                                 </dx:ContentControl>
                             </ContentCollection>
@@ -221,7 +221,12 @@
                     </TabPages>
                 </dx:ASPxPageControl>
             </td>
-        </tr> 
+        </tr>
+        <%--<tr>
+            <td>
+                <dx:ASPxMemo runat="server" ID="DetailNotes" ClientInstanceName="DetailNotes" Width="100%" Height="170" ReadOnly="true" />
+            </td>
+        </tr>--%>    
     </table>
     <cc1:msgBox ID="msgBox1" runat="server" /> 
 </div>

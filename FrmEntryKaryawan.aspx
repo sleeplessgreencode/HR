@@ -40,7 +40,7 @@
         PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" ClientInstanceName="PopEntKeluarga"
         HeaderText="Data Entry Keluarga" PopupAnimationType="Fade" 
             Width="700px" PopupElementID="PopEntry" CloseOnEscape="True" 
-        Height="200px" Theme="MetropolisBlue" AllowDragging="True">
+        Height="200px" Theme="MetropolisBlue" AllowDragging="True" ShowPageScrollbarWhenModal="true">
         <ClientSideEvents EndCallback="function(s, e) { PopEntKeluarga.Show(); }" />
         <ContentCollection>
             <dx:PopupControlContentControl ID="PopupControlContentControl2" runat="server">
@@ -159,7 +159,7 @@
         PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" ClientInstanceName="PopEntPendidikan"
         HeaderText="Data Entry Pendidikan" PopupAnimationType="Fade" 
             Width="700px" PopupElementID="PopEntry" CloseOnEscape="True" 
-        Height="200px" Theme="MetropolisBlue" AllowDragging="True">
+        Height="200px" Theme="MetropolisBlue" AllowDragging="True" ShowPageScrollbarWhenModal="true">
         <ClientSideEvents EndCallback="function(s, e) { PopEntPendidikan.Show(); }" />
         <ContentCollection>
             <dx:PopupControlContentControl ID="PopupControlContentControl3" runat="server">
@@ -308,7 +308,7 @@
         PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" ClientInstanceName="PopEntKetrampilan"
         HeaderText="Data Entry Ketrampilan" PopupAnimationType="Fade" 
             Width="700px" PopupElementID="PopEntry" CloseOnEscape="True" 
-        Height="200px" Theme="MetropolisBlue" AllowDragging="True">
+        Height="200px" Theme="MetropolisBlue" AllowDragging="True" ShowPageScrollbarWhenModal="true">
         <ClientSideEvents EndCallback="function(s, e) { PopEntKetrampilan.Show(); }" />
         <ContentCollection>
             <dx:PopupControlContentControl ID="PopupControlContentControl4" runat="server">
@@ -429,7 +429,7 @@
         PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" ClientInstanceName="PopEntRwytPekerjaan"
         HeaderText="Data Entry Riwayat Pekerjaan" PopupAnimationType="Fade" 
             Width="700px" PopupElementID="PopEntry" CloseOnEscape="True" 
-        Height="200px" Theme="MetropolisBlue" AllowDragging="True">
+        Height="200px" Theme="MetropolisBlue" AllowDragging="True" ShowPageScrollbarWhenModal="true">
         <ClientSideEvents EndCallback="function(s, e) { PopEntRwytPekerjaan.Show(); }" />
         <ContentCollection>
             <dx:PopupControlContentControl ID="PopupControlContentControl5" runat="server">
@@ -589,8 +589,8 @@
     <dx:ASPxPopupControl ID="PopEntRwytPekerjaanMinarta" runat="server" CloseAction="CloseButton" Modal="True"
         PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" ClientInstanceName="PopEntRwytPekerjaanMinarta"
         HeaderText="Data Entry Riwayat Pekerjaan Minarta" PopupAnimationType="Fade" 
-            Width="700px" PopupElementID="PopEntry" CloseOnEscape="True" 
-        Height="200px" Theme="MetropolisBlue" AllowDragging="True">
+            Width="700px" PopupElementID="PopEntry" CloseOnEscape="True"
+        Height="200px" Theme="MetropolisBlue" AllowDragging="True" ShowPageScrollbarWhenModal="true">
         <ClientSideEvents EndCallback="function(s, e) { PopEntRwytPekerjaanMinarta.Show(); }" />
         <ContentCollection>
             <dx:PopupControlContentControl ID="PopupControlContentControl6" runat="server">
@@ -1508,7 +1508,7 @@
                 :
             </td>
             <td colspan="3">
-                <dx:aspxTextBox runat="server" id="TxtNoTelp" Theme="MetropolisBlue" 
+                <dx:aspxTextBox runat="server" id="TxtNoTelp" Theme="MetropolisBlue" MaxLength="50" 
                     Width="100%">
                 </dx:aspxTextBox>
             </td>

@@ -31,6 +31,8 @@ Public Class FrmKaryawan
                     .ExecuteNonQuery()
                 End With
             End Using
+            GridMaster.DataBind()
+
         End If
 
         If IsPostBack = False Then
@@ -43,11 +45,13 @@ Public Class FrmKaryawan
             GridMaster.Columns(11).Visible = False
             GridMaster.Columns(12).Visible = False
             GridMaster.Columns(13).Visible = False
+            GridMaster.Columns(14).Visible = False
         End If
 
         If Session("MasterPage") IsNot Nothing Then
             GridMaster.PageIndex = Session("MasterPage")
         End If
+
     End Sub
     Protected Sub GridMaster_DataBound(ByVal sender As Object, ByVal e As EventArgs)
         If GridMaster.Columns("UpdateColumn") Is Nothing Then
@@ -74,22 +78,22 @@ Public Class FrmKaryawan
         If e.ButtonID = "UpdateBaris" Then
             Session("Karyawan") = "UPD"
             Session("NIK") = GridMaster.GetRowValues(e.VisibleIndex, "NIK")
-            Using CmdFind As New SqlClient.SqlCommand
-                With CmdFind
-                    .Connection = Conn
-                    .CommandType = CommandType.Text
-                    .CommandText = "SELECT * FROM Karyawan WHERE NIK=@P1"
-                    .Parameters.AddWithValue("@P1", Session("NIK"))
-                End With
-                Using RsFind As SqlClient.SqlDataReader = CmdFind.ExecuteReader
-                    If RsFind.Read Then
-                        If RsFind("Active") = "0" Then
-                            msgBox1.alert(RsFind("Nama") & " sudah non aktif.")
-                            Exit Sub
-                        End If
-                    End If
-                End Using
-            End Using
+            'Using CmdFind As New SqlClient.SqlCommand
+            '    With CmdFind
+            '        .Connection = Conn
+            '        .CommandType = CommandType.Text
+            '        .CommandText = "SELECT * FROM Karyawan WHERE NIK=@P1"
+            '        .Parameters.AddWithValue("@P1", Session("NIK"))
+            '    End With
+            '    Using RsFind As SqlClient.SqlDataReader = CmdFind.ExecuteReader
+            '        If RsFind.Read Then
+            '            If RsFind("Active") = "0" Then
+            '                msgBox1.alert(RsFind("Nama") & " sudah non aktif.")
+            '                Exit Sub
+            '            End If
+            '        End If
+            '    End Using
+            'End Using
 
             'DevExpress.Web.ASPxWebControl.RedirectOnCallback("FrmEntryKaryawan.aspx")
             Response.Redirect("FrmEntryKaryawan.aspx")
@@ -142,7 +146,8 @@ Public Class FrmKaryawan
                                "Karyawan.Grade, " & _
                                "Karyawan.UraianPekerjaan as [Uraian Pekerjaan], " & _
                                "Karyawan.Foto, " & _
-                               "FORMAT(Karyawan.PrdAwal,'dd-MMM-yyyy') as [PrdAwal] " & _
+                               "FORMAT(Karyawan.PrdAwal,'dd-MMM-yyyy') as [PrdAwal], " & _
+                               "Karyawan.Active " & _
                                "FROM Karyawan ORDER BY NIK DESC"
             End With
             Using DaGrid As New SqlClient.SqlDataAdapter
@@ -439,6 +444,21 @@ Public Class FrmKaryawan
         End If
     End Sub
 
+    Private Sub GridMaster_HtmlRowPrepared(sender As Object, e As DevExpress.Web.ASPxGridViewTableRowEventArgs) Handles GridMaster.HtmlRowPrepared
+        If e.RowType <> GridViewRowType.Data Then
+            Return
+        End If        
+        If e.GetValue("Active") = "0" Then
+            e.Row.Font.Strikeout = True
+            e.Row.Font.Italic = True
+            e.Row.ForeColor = System.Drawing.Color.IndianRed
+        End If
+    End Sub
+
+    Private Sub GridMaster_PageIndexChanged1(sender As Object, e As System.EventArgs) Handles GridMaster.PageIndexChanged
+        Session("MasterPage") = TryCast(sender, ASPxGridView).PageIndex
+    End Sub
+
     Private Sub GridMaster_PreRender(sender As Object, e As System.EventArgs) Handles GridMaster.PreRender
         GridMaster.FocusedRowIndex = -1
     End Sub
@@ -483,7 +503,5 @@ Public Class FrmKaryawan
 
         End If
     End Sub
-    Protected Sub GridMaster_PageIndexChanged(Byval sender as Object, Byval e as EventArgs)
-        Session("MasterPage") = TryCast(sender, ASPxGridView).PageIndex
-    End Sub
+
 End Class
