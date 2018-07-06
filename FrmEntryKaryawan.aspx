@@ -879,7 +879,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtNoKTP" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
         </tr>
@@ -953,7 +953,7 @@
                 <table>
                 <tr>
                     <td>
-                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehKTP" runat="server" Theme="MetropolisBlue">
+                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehKTP" runat="server" Theme="MetropolisBlue" MaxLength="50">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
@@ -969,7 +969,7 @@
             </td>
             <td>
                 <dx:aspxTextBox runat="server" id="TxtTempatLahir" Theme="MetropolisBlue" 
-                    Width="100%" >
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
             <td colspan="2">
@@ -986,7 +986,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtNoPassport" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
         </tr>
@@ -999,7 +999,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtWN" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="20">
                 </dx:aspxTextBox>
             </td>
             <td>
@@ -1076,7 +1076,7 @@
                 <table>
                 <tr>
                     <td>
-                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehPassport" runat="server" Theme="MetropolisBlue">
+                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehPassport" runat="server" Theme="MetropolisBlue" MaxLength="50">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
@@ -1112,7 +1112,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtNoNPWP" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
         </tr>
@@ -1170,7 +1170,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtSubdivisi" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="40">
                 </dx:aspxTextBox>
             </td>
             <td>
@@ -1185,7 +1185,7 @@
                 <table>
                 <tr>
                     <td>
-                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehNPWP" runat="server" Theme="MetropolisBlue">
+                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehNPWP" runat="server" Theme="MetropolisBlue" MaxLength="50">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
@@ -1200,7 +1200,7 @@
                 :
             </td>
             <td colspan="3">
-                <dx:aspxTextBox runat="server" id="TxtJabatan" Theme="MetropolisBlue" 
+                <dx:aspxTextBox runat="server" id="TxtJabatan" Theme="MetropolisBlue" MaxLength="50"
                     Width="100%">
                 </dx:aspxTextBox>
             </td>
@@ -1214,7 +1214,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtNoKK" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
         </tr>
@@ -1227,7 +1227,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtGolongan" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="10">
                 </dx:aspxTextBox>
             </td>
             <td>
@@ -1265,7 +1265,7 @@
                 :
             </td>
             <td colspan="3">
-                <dx:aspxTextBox runat="server" id="TxtGrade" Theme="MetropolisBlue" 
+                <dx:aspxTextBox runat="server" id="TxtGrade" Theme="MetropolisBlue" MaxLength="10"
                     Width="100%">
                 </dx:aspxTextBox>
             </td>
@@ -1281,7 +1281,7 @@
                 <table>
                 <tr>
                     <td>
-                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehKK" runat="server" Theme="MetropolisBlue">
+                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehKK" runat="server" Theme="MetropolisBlue" MaxLength="50">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
@@ -1309,7 +1309,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtNoSIMA" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
         </tr>
@@ -1374,7 +1374,7 @@
                 <table>
                 <tr>
                     <td>
-                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehSIMA" runat="server" Theme="MetropolisBlue">
+                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehSIMA" runat="server" Theme="MetropolisBlue" MaxLength="50">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
@@ -1389,7 +1389,7 @@
                 :
             </td>
             <td colspan="3" class="style1">
-                <dx:ASPxTextBox ID="TxtProvinsi" runat="server" Theme="MetropolisBlue">
+                <dx:ASPxTextBox ID="TxtProvinsi" runat="server" Theme="MetropolisBlue" MaxLength="30">
                 </dx:ASPxTextBox>
             </td>
             <td>
@@ -1402,7 +1402,7 @@
             </td>
             <td colspan="3" class="style1">
                 <dx:aspxTextBox runat="server" id="TxtNoSIMB" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
         </tr>
@@ -1467,7 +1467,7 @@
                 <table>
                 <tr>
                     <td>
-                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehSIMB" runat="server" Theme="MetropolisBlue">
+                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehSIMB" runat="server" Theme="MetropolisBlue" MaxLength="50">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
@@ -1483,7 +1483,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtEmail" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
             <td>
@@ -1496,7 +1496,7 @@
             </td>
             <td colspan="3" class="style1">
                 <dx:aspxTextBox runat="server" id="TxtNoSIMC" Theme="MetropolisBlue" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
         </tr>
@@ -1509,7 +1509,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtNoTelp" Theme="MetropolisBlue" MaxLength="50" 
-                    Width="100%">
+                    Width="100%" MaxLength="30">
                 </dx:aspxTextBox>
             </td>
             <td>
@@ -1547,7 +1547,7 @@
                 :
             </td>
             <td colspan="3">
-                <dx:aspxTextBox runat="server" id="TxtLokasiKerja" Theme="MetropolisBlue" 
+                <dx:aspxTextBox runat="server" id="TxtLokasiKerja" Theme="MetropolisBlue" MaxLength="50"
                     Width="100%">
                 </dx:aspxTextBox>
             </td>
@@ -1563,7 +1563,7 @@
                 <table>
                 <tr>
                     <td>
-                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehSIMC" runat="server" Theme="MetropolisBlue">
+                        <dx:ASPxTextBox ID="TxtDiterbitkanOlehSIMC" runat="server" Theme="MetropolisBlue" MaxLength="50">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
