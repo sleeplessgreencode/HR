@@ -437,27 +437,6 @@ Public Class FrmEntryKaryawan
     End Sub
 
     Protected Sub BtnSaveKeluarga_Click(sender As Object, e As EventArgs) Handles BtnSaveKeluarga.Click
-        'If TxtHubKeluarga.Value = "" Then
-        '    LblErr.Text = "Hubungan Keluarga belum di-pilih."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtNamaKeluarga.Text = "" Then
-        '    LblErr.Text = "Nama Keluarga belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtJenisKelaminKeluarga.Value = "" Then
-        '    LblErr.Text = "Jenis Kelamin belum di-pilih."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtTglLahirKeluarga.Text = "" Then
-        '    LblErr.Text = "Tanggal Lahir belum di-pilih."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-
         TmpDtKeluarga = Session("TmpDtKeluarga")
 
         If TxtActKeluarga.Text = "NEW" Then
@@ -488,27 +467,6 @@ Public Class FrmEntryKaryawan
         PopEntKeluarga.ShowOnPageLoad = False
     End Sub
     Protected Sub BtnSavePendidikan_Click(sender As Object, e As EventArgs) Handles BtnSavePendidikan.Click
-        'If TxtTgkPendidikan.Value = "" Then
-        '    LblErr.Text = "Tingkat Pendidikan belum di-pilih."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtPrdAwalPendidikan.Text = "" Then
-        '    LblErr.Text = "Tanggal Dimulai belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtInstitusiPendidikan.Text = "" Then
-        '    LblErr.Text = "Nama Institusi belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtAlamatInstitusiPendidikan.Text = "" Then
-        '    LblErr.Text = "Alamat Institusi belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-
         TmpDtPendidikan = Session("TmpDtPendidikan")
 
         If TxtActPendidikan.Text = "NEW" Then
@@ -545,32 +503,6 @@ Public Class FrmEntryKaryawan
         PopEntPendidikan.ShowOnPageLoad = False
     End Sub
     Protected Sub BtnSaveKetrampilan_Click(sender As Object, e As EventArgs) Handles BtnSaveKetrampilan.Click
-        'If TxtNamaKetrampilan.Text = "" Then
-        '    LblErr.Text = "Nama Ketramplan belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtPrdAwalKetrampilan.Text = "" Then
-        '    LblErr.Text = "Tanggal Dimulai belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtNamaSertifikatKetrampilan.Text = "" Then
-        '    LblErr.Text = "Nama Sertifikat belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtGradeKetrampilan.Text = "" Then
-        '    LblErr.Text = "Level/Grade Ketrampilan belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtInstitusiKetrampilan.Text = "" Then
-        '    LblErr.Text = "Nama Institusi belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-
         TmpDtKetrampilan = Session("TmpDtKetrampilan")
 
         If TxtActKetrampilan.Text = "NEW" Then
@@ -604,52 +536,6 @@ Public Class FrmEntryKaryawan
         PopEntKetrampilan.ShowOnPageLoad = False
     End Sub
     Protected Sub BtnSaveRwytPekerjaan_Click(sender As Object, e As EventArgs) Handles BtnSaveRwytPekerjaan.Click
-        'If TxtPrdAwalRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Tanggal Dimulai belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtPrdAkhirRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Tanggal Berakhir belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtPerusahaanRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Nama Perusahaan belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtAlamatRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Alamat Perusahaan belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtIndustriRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Bidang Industri belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtJabatanRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Jabatan belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtLokasiKerjaRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Lokasi Kerja belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtGajiRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Gaji Pokok belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If TxtUraianRwytPekerjaan.Text = "" Then
-        '    LblErr.Text = "Uraian Pekerjaan belum di-isi."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-
         TmpDtRwytPekerjaan = Session("TmpDtRwytPekerjaan")
 
         If TxtActRwytPekerjaan.Text = "NEW" Then
@@ -826,36 +712,6 @@ Public Class FrmEntryKaryawan
                 End If
             Next
         End If
-        'If FileKTP.HasFile And (FileKTP.PostedFile.ContentType.ToLower <> "image/jpeg" And _
-        '                        FileKTP.PostedFile.ContentType.ToLower <> "application/pdf") Then
-        '    LblErr.Text = "KTP hanya mendukung file dengan ext. JPG/JPEG/PDF."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If FileKK.HasFile And (FileKK.PostedFile.ContentType.ToLower <> "image/jpeg" And _
-        '                       FileKK.PostedFile.ContentType.ToLower <> "application/pdf") Then
-        '    LblErr.Text = "Kartu Keluarga hanya mendukung file dengan ext. JPG/JPEG/PDF."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If FileNPWP.HasFile And (FileNPWP.PostedFile.ContentType.ToLower <> "image/jpeg" And _
-        '                         FileNPWP.PostedFile.ContentType.ToLower <> "application/pdf") Then
-        '    LblErr.Text = "NPWP hanya mendukung file dengan ext. JPG/JPEG/PDF."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If FileIjazah.HasFile And (FileIjazah.PostedFile.ContentType.ToLower <> "image/jpeg" And _
-        '                           FileIjazah.PostedFile.ContentType.ToLower <> "application/pdf") Then
-        '    LblErr.Text = "Ijazah hanya mendukung file dengan ext. JPG/JPEG/PDF."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
-        'If FileTranskripNilai.HasFile And (FileTranskripNilai.PostedFile.ContentType.ToLower <> "image/jpeg" And _
-        '                                   FileTranskripNilai.PostedFile.ContentType.ToLower <> "application/pdf") Then
-        '    LblErr.Text = "Transkrip Nilai hanya mendukung file dengan ext. JPG/JPEG/PDF."
-        '    ErrMsg.ShowOnPageLoad = True
-        '    Exit Sub
-        'End If
 
         TmpDtKeluarga = Session("TmpDtKeluarga")
         TmpDtPendidikan = Session("TmpDtPendidikan")
@@ -1514,16 +1370,6 @@ Public Class FrmEntryKaryawan
                                         SelectRecord.Cells(1).Text
             End If
 
-            'If SelectRecord.Cells(1).Text.Split(".")(1) = "jpg" Then
-            '    Session("ViewJPG") = "/PDF/Employee/" & Session("NIK") & "/" & _
-            '                            SelectRecord.Cells(1).Text
-            'ElseIf SelectRecord.Cells(1).Text.Split(".")(1) = "pdf" Then
-            '    Session("ViewPDF") = "/PDF/Employee/" & Session("NIK") & "/" & _
-            '                            SelectRecord.Cells(1).Text
-            'Else
-            '    msgBox1.alert("Format file tidak mendukung untuk dilihat.")
-            '    Exit Sub
-            'End If
             With DialogWindow1
                 .TargetUrl = "FrmView.aspx"
                 .Open()
