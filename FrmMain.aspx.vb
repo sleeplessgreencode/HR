@@ -1,11 +1,3 @@
-﻿Public Class FrmMain
-    Inherits System.Web.UI.Page
-
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        'Label1.Text = "Welcome " & Session("User") & "<br /> " & DateTime.Now.ToLongDateString() & " " & DateTime.Now.ToLongTimeString()
-    End Sub
-
-    'Protected Sub Timer1_Tick(sender As Object, e As System.EventArgs) Handles Timer1.Tick
-    'Label1.Text = "Welcome " & Session("User") & "<br /> " & DateTime.Now.ToLongDateString() & " " & DateTime.Now.ToLongTimeString()
-    'End Sub
-End Class
+version https://git-lfs.github.com/spec/v1
+oid sha256:64b8754b8c0aeb90b253757ce1614881a95aff4fd2dc210379d12a8e3c7707ac
+size 563
