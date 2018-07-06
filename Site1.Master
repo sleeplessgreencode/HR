@@ -1,0 +1,84 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="HR_ASPNET.Site1" %>
+<%@ Register Assembly="DevExpress.Web.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <style type="text/css">
+        html, body {font-family: 'Segoe UI'; font-size: 12px;}
+        .hiddencol {display:none;}
+        .font1 {font-family:'Segoe UI'; font-size: 12px;}
+        .hover_row{background-color: #A1DCF2;}
+        .title {font-family: 'Segoe UI Light'; font-size: 30px;}
+    </style>
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="font1" style="border-bottom-style: solid; border-bottom-width: 3px; border-bottom-color: #176FFF; padding-bottom: 2px;">
+        <table width="100%">
+        <tr>
+            <td style="width:50%">
+                <asp:Label ID="lblNotification" runat="server" Text="" ForeColor="White" Font-Size="Medium" 
+                    BackColor="#FF3300" Visible="false">
+                </asp:Label>
+            </td>
+            <td style="width:50%;" align="right">
+                <asp:Label ID="lblMaster" runat="server" Text=""></asp:Label>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <%--<div class="font1">   
+        <div align="right" 
+            style="border-bottom-style: solid; border-bottom-width: 3px; border-bottom-color: #176FFF; padding-bottom: 5px;">
+            <asp:Label ID="lblMaster" runat="server" Text="Welcome "></asp:Label>
+        </div>            
+    </div>--%>
+    <div>
+        <dx:ASPxMenu ID="Menu1" runat="server" Theme="Moderno" AppearAfter="50" 
+        DisappearAfter="300" EnableAnimation="True" BackColor="#C6DBFF" 
+            SeparatorWidth="1px">
+        <Items>
+            <dx:MenuItem Text="Basic Data" Name="#Daftar"> 
+                <Items>
+                <dx:MenuItem Text="Data Karyawan" Name="FrmKaryawan.aspx" NavigateUrl="FrmKaryawan.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Hari Libur" Name="FrmHariLibur.aspx" NavigateUrl="FrmHariLibur.aspx"></dx:MenuItem>
+                </Items>
+            </dx:MenuItem>
+            <dx:MenuItem Text="Entry" Name="#Entry">
+                <Items>
+                <dx:MenuItem Text="Load Absensi" Name="FrmLoadAbsensi.aspx" NavigateUrl="FrmLoadAbsensi.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Entry Absensi" Name="FrmAbsensi.aspx" NavigateUrl="FrmAbsensi.aspx"></dx:MenuItem>
+                </Items>
+            </dx:MenuItem>
+            <dx:MenuItem Text="Report" Name="#Report">
+                <Items>
+                <dx:MenuItem Text="Rekap Absensi" Name="FrmRekapAbsensi.aspx" NavigateUrl="FrmRekapAbsensi.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Absensi Karyawan" Name="FrmAbsensiKaryawan.aspx" NavigateUrl="FrmAbsensiKaryawan.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Rekap Status Absensi" Name="FrmRekapStatusAbsensi.aspx" NavigateUrl="FrmRekapStatusAbsensi.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Export Status Absensi" Name="FrmRekapStatusAbsensi1.aspx" NavigateUrl="FrmRekapStatusAbsensi1.aspx"></dx:MenuItem>
+                </Items>
+            </dx:MenuItem>
+            <dx:MenuItem Text="Tools" Name="#Tools">                    
+                <Items>
+                <dx:MenuItem Text="Setup Akses" Name="FrmSetupAkses.aspx" NavigateUrl="FrmSetupAkses.aspx"></dx:MenuItem>
+                <dx:MenuItem Text="Change Password" Name="FrmChangePasswd.aspx" NavigateUrl="FrmChangePasswd.aspx"></dx:MenuItem>
+                </Items>
+            </dx:MenuItem>
+            <dx:MenuItem Text="Log Out" Name="Default.aspx" NavigateUrl="Default.aspx"></dx:MenuItem>
+        </Items>
+        </dx:ASPxMenu>
+        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

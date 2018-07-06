@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsStsAbsensi" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsStsAbsensi" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsStsAbsensi" msprop:Generator_UserDSName="DsStsAbsensi">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Absensi" msprop:Generator_TableClassName="AbsensiDataTable" msprop:Generator_TableVarName="tableAbsensi" msprop:Generator_RowChangedName="AbsensiRowChanged" msprop:Generator_TablePropName="Absensi" msprop:Generator_RowDeletingName="AbsensiRowDeleting" msprop:Generator_RowChangingName="AbsensiRowChanging" msprop:Generator_RowEvHandlerName="AbsensiRowChangeEventHandler" msprop:Generator_RowDeletedName="AbsensiRowDeleted" msprop:Generator_RowClassName="AbsensiRow" msprop:Generator_UserTableName="Absensi" msprop:Generator_RowEvArgName="AbsensiRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NIK" msprop:Generator_ColumnVarNameInTable="columnNIK" msprop:Generator_ColumnPropNameInRow="NIK" msprop:Generator_ColumnPropNameInTable="NIKColumn" msprop:Generator_UserColumnName="NIK" type="xs:string" minOccurs="0" />
+              <xs:element name="Nama" msprop:Generator_ColumnVarNameInTable="columnNama" msprop:Generator_ColumnPropNameInRow="Nama" msprop:Generator_ColumnPropNameInTable="NamaColumn" msprop:Generator_UserColumnName="Nama" type="xs:string" minOccurs="0" />
+              <xs:element name="TtlTelat" msprop:Generator_ColumnVarNameInTable="columnTtlTelat" msprop:Generator_ColumnPropNameInRow="TtlTelat" msprop:Generator_ColumnPropNameInTable="TtlTelatColumn" msprop:Generator_UserColumnName="TtlTelat" type="xs:short" minOccurs="0" />
+              <xs:element name="TtlIjin" msprop:Generator_ColumnVarNameInTable="columnTtlIjin" msprop:Generator_ColumnPropNameInRow="TtlIjin" msprop:Generator_ColumnPropNameInTable="TtlIjinColumn" msprop:Generator_UserColumnName="TtlIjin" type="xs:short" minOccurs="0" />
+              <xs:element name="TtlCuti" msprop:Generator_ColumnVarNameInTable="columnTtlCuti" msprop:Generator_ColumnPropNameInRow="TtlCuti" msprop:Generator_ColumnPropNameInTable="TtlCutiColumn" msprop:Generator_UserColumnName="TtlCuti" type="xs:short" minOccurs="0" />
+              <xs:element name="TtlSakit" msprop:Generator_ColumnVarNameInTable="columnTtlSakit" msprop:Generator_ColumnPropNameInRow="TtlSakit" msprop:Generator_ColumnPropNameInTable="TtlSakitColumn" msprop:Generator_UserColumnName="TtlSakit" type="xs:short" minOccurs="0" />
+              <xs:element name="TtlDinas" msprop:Generator_ColumnVarNameInTable="columnTtlDinas" msprop:Generator_ColumnPropNameInRow="TtlDinas" msprop:Generator_ColumnPropNameInTable="TtlDinasColumn" msprop:Generator_UserColumnName="TtlDinas" type="xs:short" minOccurs="0" />
+              <xs:element name="TtlIjinStgh" msprop:Generator_ColumnVarNameInTable="columnTtlIjinStgh" msprop:Generator_ColumnPropNameInRow="TtlIjinStgh" msprop:Generator_ColumnPropNameInTable="TtlIjinStghColumn" msprop:Generator_UserColumnName="TtlIjinStgh" type="xs:short" minOccurs="0" />
+              <xs:element name="TtlAlpa" msprop:Generator_ColumnVarNameInTable="columnTtlAlpa" msprop:Generator_ColumnPropNameInRow="TtlAlpa" msprop:Generator_ColumnPropNameInTable="TtlAlpaColumn" msprop:Generator_UserColumnName="TtlAlpa" type="xs:short" minOccurs="0" />
+              <xs:element name="TtlTdkAbsen" msprop:Generator_ColumnVarNameInTable="columnTtlTdkAbsen" msprop:Generator_ColumnPropNameInRow="TtlTdkAbsen" msprop:Generator_ColumnPropNameInTable="TtlTdkAbsenColumn" msprop:Generator_UserColumnName="TtlTdkAbsen" type="xs:short" minOccurs="0" />
+              <xs:element name="WorkingHour" msprop:Generator_ColumnVarNameInTable="columnWorkingHour" msprop:Generator_ColumnPropNameInRow="WorkingHour" msprop:Generator_ColumnPropNameInTable="WorkingHourColumn" msprop:Generator_UserColumnName="WorkingHour" type="xs:string" minOccurs="0" />
+              <xs:element name="TtlMasuk" msprop:Generator_ColumnVarNameInTable="columnTtlMasuk" msprop:Generator_ColumnPropNameInRow="TtlMasuk" msprop:Generator_ColumnPropNameInTable="TtlMasukColumn" msprop:Generator_UserColumnName="TtlMasuk" type="xs:short" minOccurs="0" />
+              <xs:element name="Bulan" msprop:Generator_ColumnVarNameInTable="columnBulan" msprop:Generator_ColumnPropNameInRow="Bulan" msprop:Generator_ColumnPropNameInTable="BulanColumn" msprop:Generator_UserColumnName="Bulan" type="xs:short" minOccurs="0" />
+              <xs:element name="Tahun" msprop:Generator_ColumnVarNameInTable="columnTahun" msprop:Generator_ColumnPropNameInRow="Tahun" msprop:Generator_ColumnPropNameInTable="TahunColumn" msprop:Generator_UserColumnName="Tahun" type="xs:short" minOccurs="0" />
+              <xs:element name="TtlCutiSblmnya" msprop:Generator_ColumnVarNameInTable="columnTtlCutiSblmnya" msprop:Generator_ColumnPropNameInRow="TtlCutiSblmnya" msprop:Generator_ColumnPropNameInTable="TtlCutiSblmnyaColumn" msprop:Generator_UserColumnName="TtlCutiSblmnya" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Score" msprop:Generator_ColumnVarNameInTable="columnScore" msprop:Generator_ColumnPropNameInRow="Score" msprop:Generator_ColumnPropNameInTable="ScoreColumn" msprop:Generator_UserColumnName="Score" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

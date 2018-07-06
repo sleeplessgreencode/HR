@@ -1,0 +1,2556 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HR_ASPNET
+</name>
+</assembly>
+<members>
+<member name="T:HR_ASPNET.DsStsAbsensi.AbsensiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HR_ASPNET.DsStsAbsensi.AbsensiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HR_ASPNET.DsStsAbsensi.AbsensiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HR_ASPNET.DsStsAbsensi">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="F:HR_ASPNET.FrmLoadAbsensi.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmLoadAbsensi.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmLoadAbsensi.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmLoadAbsensi.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmLoadAbsensi.FileUpload1">
+	<summary>
+FileUpload1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmLoadAbsensi.BtnUpload">
+	<summary>
+BtnUpload control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmLoadAbsensi.GridData">
+	<summary>
+GridData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmLoadAbsensi.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi1.PrdAwal">
+	<summary>
+PrdAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi1.PrdAkhir">
+	<summary>
+PrdAkhir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi1.BtnPrint">
+	<summary>
+BtnPrint control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi1.CRViewer">
+	<summary>
+CRViewer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.PrdAwal">
+	<summary>
+PrdAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.PrdAkhir">
+	<summary>
+PrdAkhir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.DDLKaryawan">
+	<summary>
+DDLKaryawan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.BtnPrint">
+	<summary>
+BtnPrint control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.PopEntry">
+	<summary>
+PopEntry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.PopupControlContentControl2">
+	<summary>
+PopupControlContentControl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.TxtAction">
+	<summary>
+TxtAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.Tgl1">
+	<summary>
+Tgl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.CheckMultiple">
+	<summary>
+CheckMultiple control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.LblTgl2">
+	<summary>
+LblTgl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.Tgl2">
+	<summary>
+Tgl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.TxtKeterangan">
+	<summary>
+TxtKeterangan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.TxtTahun">
+	<summary>
+TxtTahun control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.BtnAdd">
+	<summary>
+BtnAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmHariLibur.GridData">
+	<summary>
+GridData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:HR_ASPNET.My.MyWebExtension.Application">
+	<summary>
+ Returns information about the current application.
+ </summary>
+</member><member name="P:HR_ASPNET.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:HR_ASPNET.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:HR_ASPNET.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:HR_ASPNET.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:HR_ASPNET.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="P:HR_ASPNET.My.MyWebExtension.WebServices">
+	<summary>
+ Provides access to WebServices added to this project.
+ </summary>
+</member><member name="T:HR_ASPNET.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopEntKeluarga">
+	<summary>
+PopEntKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopupControlContentControl2">
+	<summary>
+PopupControlContentControl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtActKeluarga">
+	<summary>
+TxtActKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoUrutKeluarga">
+	<summary>
+TxtNoUrutKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtHubKeluarga">
+	<summary>
+TxtHubKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNamaKeluarga">
+	<summary>
+TxtNamaKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtJenisKelaminKeluarga">
+	<summary>
+TxtJenisKelaminKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTglLahirKeluarga">
+	<summary>
+TxtTglLahirKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPekerjaanKeluarga">
+	<summary>
+TxtPekerjaanKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPerusahaanKeluarga">
+	<summary>
+TxtPerusahaanKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnSaveKeluarga">
+	<summary>
+BtnSaveKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnCancelKeluarga">
+	<summary>
+BtnCancelKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopEntPendidikan">
+	<summary>
+PopEntPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopupControlContentControl3">
+	<summary>
+PopupControlContentControl3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtActPendidikan">
+	<summary>
+TxtActPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoUrutPendidikan">
+	<summary>
+TxtNoUrutPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTgkPendidikan">
+	<summary>
+TxtTgkPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalPendidikan">
+	<summary>
+TxtPrdAwalPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirPendidikan">
+	<summary>
+TxtPrdAkhirPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtInstitusiPendidikan">
+	<summary>
+TxtInstitusiPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtAlamatInstitusiPendidikan">
+	<summary>
+TxtAlamatInstitusiPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtJurusanPendidikan">
+	<summary>
+TxtJurusanPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtLlsTdkLlsPendidikan">
+	<summary>
+TxtLlsTdkLlsPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNilaiPendidikan">
+	<summary>
+TxtNilaiPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoIjazahPendidikan">
+	<summary>
+TxtNoIjazahPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnSavePendidikan">
+	<summary>
+BtnSavePendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnCancelPendidikan">
+	<summary>
+BtnCancelPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopEntKetrampilan">
+	<summary>
+PopEntKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopupControlContentControl4">
+	<summary>
+PopupControlContentControl4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtActKetrampilan">
+	<summary>
+TxtActKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoUrutKetrampilan">
+	<summary>
+TxtNoUrutKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNamaKetrampilan">
+	<summary>
+TxtNamaKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalKetrampilan">
+	<summary>
+TxtPrdAwalKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirKetrampilan">
+	<summary>
+TxtPrdAkhirKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNamaSertifikatKetrampilan">
+	<summary>
+TxtNamaSertifikatKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtGradeKetrampilan">
+	<summary>
+TxtGradeKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoSertifikatKetrampilan">
+	<summary>
+TxtNoSertifikatKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtInstitusiKetrampilan">
+	<summary>
+TxtInstitusiKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnSaveKetrampilan">
+	<summary>
+BtnSaveKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnCancelKetrampilan">
+	<summary>
+BtnCancelKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopEntRwytPekerjaan">
+	<summary>
+PopEntRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopupControlContentControl5">
+	<summary>
+PopupControlContentControl5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtActRwytPekerjaan">
+	<summary>
+TxtActRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoUrutRwytPekerjaan">
+	<summary>
+TxtNoUrutRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalRwytPekerjaan">
+	<summary>
+TxtPrdAwalRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirRwytPekerjaan">
+	<summary>
+TxtPrdAkhirRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPerusahaanRwytPekerjaan">
+	<summary>
+TxtPerusahaanRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtAlamatRwytPekerjaan">
+	<summary>
+TxtAlamatRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtIndustriRwytPekerjaan">
+	<summary>
+TxtIndustriRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtJabatanRwytPekerjaan">
+	<summary>
+TxtJabatanRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtLokasiKerjaRwytPekerjaan">
+	<summary>
+TxtLokasiKerjaRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtGajiRwytPekerjaan">
+	<summary>
+TxtGajiRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTunjanganRwytPekerjaan">
+	<summary>
+TxtTunjanganRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtUraianRwytPekerjaan">
+	<summary>
+TxtUraianRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnSaveRwytPekerjaan">
+	<summary>
+BtnSaveRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnCancelRwytPekerjaan">
+	<summary>
+BtnCancelRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopEntRwytPekerjaanMinarta">
+	<summary>
+PopEntRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PopupControlContentControl6">
+	<summary>
+PopupControlContentControl6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtActRwytPekerjaanMinarta">
+	<summary>
+TxtActRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoUrutRwytPekerjaanMinarta">
+	<summary>
+TxtNoUrutRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalRwytPekerjaanMinarta">
+	<summary>
+TxtPrdAwalRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirRwytPekerjaanMinarta">
+	<summary>
+TxtPrdAkhirRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtDivisiRwytPekerjaanMinarta">
+	<summary>
+TxtDivisiRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtSubdivisiRwytPekerjaanMinarta">
+	<summary>
+TxtSubdivisiRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtLokasiKerjaRwytPekerjaanMinarta">
+	<summary>
+TxtLokasiKerjaRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtJabatanRwytPekerjaanMinarta">
+	<summary>
+TxtJabatanRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtGolonganRwytPekerjaanMinarta">
+	<summary>
+TxtGolonganRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtGradeRwytPekerjaanMinarta">
+	<summary>
+TxtGradeRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtGajiRwytPekerjaanMinarta">
+	<summary>
+TxtGajiRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTunjanganRwytPekerjaanMinarta">
+	<summary>
+TxtTunjanganRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtKPIRwytPekerjaanMinarta">
+	<summary>
+TxtKPIRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTesKesehatanRwytPekerjaanMinarta">
+	<summary>
+TxtTesKesehatanRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtHasilKesehatanRwytPekerjaanMinarta">
+	<summary>
+TxtHasilKesehatanRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTesPsikologiRwytPekerjaanMinarta">
+	<summary>
+TxtTesPsikologiRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtHasilPsikologiRwytPekerjaanMinarta">
+	<summary>
+TxtHasilPsikologiRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtAtasanRwytPekerjaanMinarta">
+	<summary>
+TxtAtasanRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtUraianRwytPekerjaanMinarta">
+	<summary>
+TxtUraianRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnSaveRwytPekerjaanMinarta">
+	<summary>
+BtnSaveRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnCancelRwytPekerjaanMinarta">
+	<summary>
+BtnCancelRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.LblAction">
+	<summary>
+LblAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnSaveDataEntry">
+	<summary>
+BtnSaveDataEntry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnCancelDataEntry">
+	<summary>
+BtnCancelDataEntry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNIK">
+	<summary>
+TxtNIK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoKTP">
+	<summary>
+TxtNoKTP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNama">
+	<summary>
+TxtNama control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalKTP">
+	<summary>
+TxtPrdAwalKTP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirKTP">
+	<summary>
+TxtPrdAkhirKTP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.RblJenisKelamin">
+	<summary>
+RblJenisKelamin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtDiterbitkanOlehKTP">
+	<summary>
+TxtDiterbitkanOlehKTP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTempatLahir">
+	<summary>
+TxtTempatLahir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTanggalLahir">
+	<summary>
+TxtTanggalLahir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoPassport">
+	<summary>
+TxtNoPassport control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtWN">
+	<summary>
+TxtWN control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalPassport">
+	<summary>
+TxtPrdAwalPassport control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirPassport">
+	<summary>
+TxtPrdAkhirPassport control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.UpdPanelStsNikah">
+	<summary>
+UpdPanelStsNikah control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.RblStsNikah">
+	<summary>
+RblStsNikah control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtTglNikah">
+	<summary>
+TxtTglNikah control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtDiterbitkanOlehPassport">
+	<summary>
+TxtDiterbitkanOlehPassport control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.RblAgama">
+	<summary>
+RblAgama control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoNPWP">
+	<summary>
+TxtNoNPWP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.DDLDivisi">
+	<summary>
+DDLDivisi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalNPWP">
+	<summary>
+TxtPrdAwalNPWP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirNPWP">
+	<summary>
+TxtPrdAkhirNPWP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtSubdivisi">
+	<summary>
+TxtSubdivisi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtDiterbitkanOlehNPWP">
+	<summary>
+TxtDiterbitkanOlehNPWP control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtJabatan">
+	<summary>
+TxtJabatan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoKK">
+	<summary>
+TxtNoKK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtGolongan">
+	<summary>
+TxtGolongan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalKK">
+	<summary>
+TxtPrdAwalKK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirKK">
+	<summary>
+TxtPrdAkhirKK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtGrade">
+	<summary>
+TxtGrade control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtDiterbitkanOlehKK">
+	<summary>
+TxtDiterbitkanOlehKK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwal">
+	<summary>
+TxtPrdAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoSIMA">
+	<summary>
+TxtNoSIMA control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtUraian">
+	<summary>
+TxtUraian control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalSIMA">
+	<summary>
+TxtPrdAwalSIMA control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirSIMA">
+	<summary>
+TxtPrdAkhirSIMA control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtAlamat">
+	<summary>
+TxtAlamat control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtDiterbitkanOlehSIMA">
+	<summary>
+TxtDiterbitkanOlehSIMA control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtProvinsi">
+	<summary>
+TxtProvinsi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoSIMB">
+	<summary>
+TxtNoSIMB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtKota">
+	<summary>
+TxtKota control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalSIMB">
+	<summary>
+TxtPrdAwalSIMB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirSIMB">
+	<summary>
+TxtPrdAkhirSIMB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtAlamatSurat">
+	<summary>
+TxtAlamatSurat control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtDiterbitkanOlehSIMB">
+	<summary>
+TxtDiterbitkanOlehSIMB control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtEmail">
+	<summary>
+TxtEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoSIMC">
+	<summary>
+TxtNoSIMC control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoTelp">
+	<summary>
+TxtNoTelp control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAwalSIMC">
+	<summary>
+TxtPrdAwalSIMC control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtPrdAkhirSIMC">
+	<summary>
+TxtPrdAkhirSIMC control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtLokasiKerja">
+	<summary>
+TxtLokasiKerja control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtDiterbitkanOlehSIMC">
+	<summary>
+TxtDiterbitkanOlehSIMC control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PasFoto">
+	<summary>
+PasFoto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.PasFotoDefault">
+	<summary>
+PasFotoDefault control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.FileUpload">
+	<summary>
+FileUpload control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnPopUpKeluarga">
+	<summary>
+BtnPopUpKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.GridDataKeluarga">
+	<summary>
+GridDataKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnPopUpPendidikan">
+	<summary>
+BtnPopUpPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.GridDataPendidikan">
+	<summary>
+GridDataPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnPopUpKetrampilan">
+	<summary>
+BtnPopUpKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.GridDataKetrampilan">
+	<summary>
+GridDataKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnPopUpRwytPekerjaan">
+	<summary>
+BtnPopUpRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.GridDataRwytPekerjaan">
+	<summary>
+GridDataRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.BtnPopUpRwytPekerjaanMinarta">
+	<summary>
+BtnPopUpRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.GridDataRwytPekerjaanMinarta">
+	<summary>
+GridDataRwytPekerjaanMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.GridDokumenPendukung">
+	<summary>
+GridDokumenPendukung control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.DialogWindow1">
+	<summary>
+DialogWindow1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.msgBox1">
+	<summary>
+msgBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.DelMsg">
+	<summary>
+DelMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.PopupControlContentControl2">
+	<summary>
+PopupControlContentControl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.LblDel">
+	<summary>
+LblDel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.BtnDel">
+	<summary>
+BtnDel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.TxtFind">
+	<summary>
+TxtFind control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.BtnFind">
+	<summary>
+BtnFind control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.BtnAdd">
+	<summary>
+BtnAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSetupAkses.GridData">
+	<summary>
+GridData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmChangePasswd.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmChangePasswd.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmChangePasswd.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmChangePasswd.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmChangePasswd.TxtOldPw">
+	<summary>
+TxtOldPw control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmChangePasswd.TxtNewPw">
+	<summary>
+TxtNewPw control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmChangePasswd.TxtConfirmPw">
+	<summary>
+TxtConfirmPw control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmChangePasswd.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.TxtAction">
+	<summary>
+TxtAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.TxtUserID">
+	<summary>
+TxtUserID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.TxtUserName">
+	<summary>
+TxtUserName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.TxtPassword">
+	<summary>
+TxtPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.TxtConfirmPw">
+	<summary>
+TxtConfirmPw control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.BtnAllMenu">
+	<summary>
+BtnAllMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbDataKaryawan">
+	<summary>
+CbDataKaryawan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbHariLibur">
+	<summary>
+CbHariLibur control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbLoadAbsensi">
+	<summary>
+CbLoadAbsensi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbEntryAbsensi">
+	<summary>
+CbEntryAbsensi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbRekapAbsensi">
+	<summary>
+CbRekapAbsensi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbAbsensiKaryawan">
+	<summary>
+CbAbsensiKaryawan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbRekapStatusAbsensi">
+	<summary>
+CbRekapStatusAbsensi control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbSetup">
+	<summary>
+CbSetup control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.CbPasswd">
+	<summary>
+CbPasswd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntrySetup.msgBox1">
+	<summary>
+msgBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi.PrdAwal">
+	<summary>
+PrdAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi.PrdAkhir">
+	<summary>
+PrdAkhir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi.BtnPrint">
+	<summary>
+BtnPrint control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi.CRViewer">
+	<summary>
+CRViewer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapStatusAbsensi.MsgBox1">
+	<summary>
+MsgBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmView.Image1">
+	<summary>
+Image1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET._Default.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET._Default.TxtUser">
+	<summary>
+TxtUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET._Default.TxtPasswd">
+	<summary>
+TxtPasswd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET._Default.BtnLogin">
+	<summary>
+BtnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET._Default.MsgBox1">
+	<summary>
+MsgBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRptAbsensiKaryawan.CRViewer">
+	<summary>
+CRViewer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.BtnTambah">
+	<summary>
+BtnTambah control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.GridMaster">
+	<summary>
+GridMaster control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.PasFoto">
+	<summary>
+PasFoto control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel1">
+	<summary>
+ASPxLabel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel2">
+	<summary>
+ASPxLabel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel3">
+	<summary>
+ASPxLabel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxPageControl1">
+	<summary>
+ASPxPageControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ContentControl1">
+	<summary>
+ContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel4">
+	<summary>
+ASPxLabel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel5">
+	<summary>
+ASPxLabel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel6">
+	<summary>
+ASPxLabel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel7">
+	<summary>
+ASPxLabel7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel8">
+	<summary>
+ASPxLabel8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel10">
+	<summary>
+ASPxLabel10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ASPxLabel9">
+	<summary>
+ASPxLabel9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.GridMinarta">
+	<summary>
+GridMinarta control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.GridRwytPekerjaan">
+	<summary>
+GridRwytPekerjaan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.GridPendidikan">
+	<summary>
+GridPendidikan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.GridKetrampilan">
+	<summary>
+GridKetrampilan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.GridIdentitas">
+	<summary>
+GridIdentitas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.GridKeluarga">
+	<summary>
+GridKeluarga control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.GridDokumenPendukung">
+	<summary>
+GridDokumenPendukung control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.ViewBaris">
+	<summary>
+ViewBaris control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmKaryawan.msgBox1">
+	<summary>
+msgBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapAbsensi.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapAbsensi.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapAbsensi.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapAbsensi.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapAbsensi.PrdAwal">
+	<summary>
+PrdAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapAbsensi.PrdAkhir">
+	<summary>
+PrdAkhir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRekapAbsensi.BtnPrint">
+	<summary>
+BtnPrint control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmRptRekapAbsensi.CRViewer">
+	<summary>
+CRViewer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.ErrMsg">
+	<summary>
+ErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.PopupControlContentControl1">
+	<summary>
+PopupControlContentControl1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.LblErr">
+	<summary>
+LblErr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.BtnClose">
+	<summary>
+BtnClose control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.PopEntry">
+	<summary>
+PopEntry control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.PopupControlContentControl2">
+	<summary>
+PopupControlContentControl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TxtAction">
+	<summary>
+TxtAction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.DDLKaryawan">
+	<summary>
+DDLKaryawan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TglAbsen">
+	<summary>
+TglAbsen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.DDLStatus">
+	<summary>
+DDLStatus control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.JamMasuk">
+	<summary>
+JamMasuk control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.JamPulang">
+	<summary>
+JamPulang control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TxtKeterangan">
+	<summary>
+TxtKeterangan control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.PrdAwal">
+	<summary>
+PrdAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.PrdAkhir">
+	<summary>
+PrdAkhir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.DDLField1">
+	<summary>
+DDLField1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.DDLFilterBy1">
+	<summary>
+DDLFilterBy1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TxtFind1">
+	<summary>
+TxtFind1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TglFilter1">
+	<summary>
+TglFilter1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TimeFilter1">
+	<summary>
+TimeFilter1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.BtnFind">
+	<summary>
+BtnFind control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.DDLField2">
+	<summary>
+DDLField2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.DDLFilterBy2">
+	<summary>
+DDLFilterBy2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TxtFind2">
+	<summary>
+TxtFind2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TglFilter2">
+	<summary>
+TglFilter2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.TimeFilter2">
+	<summary>
+TimeFilter2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.BtnAdd">
+	<summary>
+BtnAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmAbsensi.GridData">
+	<summary>
+GridData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.Site1.Head1">
+	<summary>
+Head1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.Site1.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.Site1.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.Site1.lblNotification">
+	<summary>
+lblNotification control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.Site1.lblMaster">
+	<summary>
+lblMaster control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.Site1.Menu1">
+	<summary>
+Menu1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.Site1.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>
