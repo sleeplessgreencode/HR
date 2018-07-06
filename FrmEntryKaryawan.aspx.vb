@@ -110,43 +110,43 @@ Public Class FrmEntryKaryawan
                     TxtNoKTP.Text = DataID("NoID")
                     TxtPrdAwalKTP.Text = If(IsDBNull(DataID("PrdAwal")) = True, String.Empty, DataID("PrdAwal"))
                     TxtPrdAkhirKTP.Text = If(IsDBNull(DataID("PrdAkhir")) = True, String.Empty, DataID("PrdAkhir"))
-                    TxtDiterbitkanOlehKTP.Text = DataID("DiterbitkanOleh")
+                    TxtDiterbitkanOlehKTP.Text = DataID("DiterbitkanOleh").ToString
                 End If
                 If DataID("JenisID") = "Passport" Then
                     TxtNoPassport.Text = DataID("NoID")
                     TxtPrdAwalPassport.Text = If(IsDBNull(DataID("PrdAwal")) = True, String.Empty, DataID("PrdAwal"))
                     TxtPrdAkhirPassport.Text = If(IsDBNull(DataID("PrdAkhir")) = True, String.Empty, DataID("PrdAkhir"))
-                    TxtDiterbitkanOlehPassport.Text = DataID("DiterbitkanOleh")
+                    TxtDiterbitkanOlehPassport.Text = DataID("DiterbitkanOleh").ToString
                 End If
                 If DataID("JenisID") = "NPWP" Then
                     TxtNoNPWP.Text = DataID("NoID")
                     TxtPrdAwalNPWP.Text = If(IsDBNull(DataID("PrdAwal")) = True, String.Empty, DataID("PrdAwal"))
                     TxtPrdAkhirNPWP.Text = If(IsDBNull(DataID("PrdAkhir")) = True, String.Empty, DataID("PrdAkhir"))
-                    TxtDiterbitkanOlehNPWP.Text = DataID("DiterbitkanOleh")
+                    TxtDiterbitkanOlehNPWP.Text = DataID("DiterbitkanOleh").ToString
                 End If
                 If DataID("JenisID") = "KK" Then
                     TxtNoKK.Text = DataID("NoID")
                     TxtPrdAwalKK.Text = If(IsDBNull(DataID("PrdAwal")) = True, String.Empty, DataID("PrdAwal"))
                     TxtPrdAkhirKK.Text = If(IsDBNull(DataID("PrdAkhir")) = True, String.Empty, DataID("PrdAkhir"))
-                    TxtDiterbitkanOlehKK.Text = DataID("DiterbitkanOleh")
+                    TxtDiterbitkanOlehKK.Text = DataID("DiterbitkanOleh").ToString
                 End If
                 If DataID("JenisID") = "SIM A" Then
                     TxtNoSIMA.Text = DataID("NoID")
                     TxtPrdAwalSIMA.Text = If(IsDBNull(DataID("PrdAwal")) = True, String.Empty, DataID("PrdAwal"))
                     TxtPrdAkhirSIMA.Text = If(IsDBNull(DataID("PrdAkhir")) = True, String.Empty, DataID("PrdAkhir"))
-                    TxtDiterbitkanOlehSIMA.Text = DataID("DiterbitkanOleh")
+                    TxtDiterbitkanOlehSIMA.Text = DataID("DiterbitkanOleh").ToString
                 End If
                 If DataID("JenisID") = "SIM B" Then
                     TxtNoSIMB.Text = DataID("NoID")
                     TxtPrdAwalSIMB.Text = If(IsDBNull(DataID("PrdAwal")) = True, String.Empty, DataID("PrdAwal"))
                     TxtPrdAkhirSIMB.Text = If(IsDBNull(DataID("PrdAkhir")) = True, String.Empty, DataID("PrdAkhir"))
-                    TxtDiterbitkanOlehSIMB.Text = DataID("DiterbitkanOleh")
+                    TxtDiterbitkanOlehSIMB.Text = DataID("DiterbitkanOleh").ToString
                 End If
                 If DataID("JenisID") = "SIM C" Then
                     TxtNoSIMC.Text = DataID("NoID")
                     TxtPrdAwalSIMC.Text = If(IsDBNull(DataID("PrdAwal")) = True, String.Empty, DataID("PrdAwal"))
                     TxtPrdAkhirSIMC.Text = If(IsDBNull(DataID("PrdAkhir")) = True, String.Empty, DataID("PrdAkhir"))
-                    TxtDiterbitkanOlehSIMC.Text = DataID("DiterbitkanOleh")
+                    TxtDiterbitkanOlehSIMC.Text = DataID("DiterbitkanOleh").ToString
                 End If
             End While
             DataID.Close()
@@ -790,7 +790,12 @@ Public Class FrmEntryKaryawan
         PopEntRwytPekerjaanMinarta.ShowOnPageLoad = False
     End Sub
 
-    Protected Sub BtnSaveDataEntry_Click(sender As Object, e As System.EventArgs) Handles BtnSaveDataEntry.Click        
+    Protected Sub BtnSaveDataEntry_Click(sender As Object, e As System.EventArgs) Handles BtnSaveDataEntry.Click
+        If TxtNIK.Text = String.Empty Then
+            LblErr.Text = "Pas Foto hanya mendukung file dengan ext. JPG/JPEG."
+            ErrMsg.ShowOnPageLoad = True
+            Exit Sub
+        End If        
         If PasFoto.HasFile Then
             If PasFoto.PostedFile.ContentType.ToLower <> "image/jpeg" Then
                 LblErr.Text = "Pas Foto hanya mendukung file dengan ext. JPG/JPEG."
