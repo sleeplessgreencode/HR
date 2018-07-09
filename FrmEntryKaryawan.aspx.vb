@@ -517,7 +517,7 @@ Public Class FrmEntryKaryawan
                                       If(TxtPrdAkhirKetrampilan.Text = String.Empty, DBNull.Value, TxtPrdAkhirKetrampilan.Date), _
                                       TxtNamaSertifikatKetrampilan.Text, TxtGradeKetrampilan.Text, TxtNoSertifikatKetrampilan.Text, TxtInstitusiKetrampilan.Text)
         Else
-            Dim Result As DataRow = TmpDtPendidikan.Select("NoUrutKetrampilan='" & TxtNoUrutKetrampilan.Text & "'").FirstOrDefault
+            Dim Result As DataRow = TmpDtKetrampilan.Select("NoUrutKetrampilan='" & TxtNoUrutKetrampilan.Text & "'").FirstOrDefault
             If Result IsNot Nothing Then
                 Result("NamaKetrampilan") = TxtNamaKetrampilan.Text
                 Result("PrdAwalKetrampilan") = TxtPrdAwalKetrampilan.Date

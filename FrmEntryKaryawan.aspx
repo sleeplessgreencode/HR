@@ -1124,9 +1124,6 @@
                 :
             </td>
             <td colspan="3">
-                <%--<dx:aspxTextBox runat="server" id="TxtDivisi" Theme="MetropolisBlue" 
-                    Width="100%">
-                </dx:aspxTextBox>--%>
                 <dx:ASPxComboBox ID="DDLDivisi" runat="server" ValueType="System.String" Theme="MetropolisBlue" SelectedIndex="1">
                     <Items>
                         <dx:ListEditItem Text="OFFICE" Value="OFFICE" />
@@ -1509,7 +1506,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtNoTelp" Theme="MetropolisBlue" MaxLength="50" 
-                    Width="100%" MaxLength="30">
+                    Width="100%">
                 </dx:aspxTextBox>
             </td>
             <td>
@@ -1592,18 +1589,6 @@
             <td>
             </td>
             <td colspan="5">
-                <%--<table>
-                <tr>
-                    <td>Scan Sertifikat Keahlian</td>
-                    <td>:</td>
-                    <td>
-                        <dx:ASPxUploadControl ID="UploadControl" runat="server" ClientInstanceName="UploadControl" Width="320"
-                            NullText="Select multiple files..." FileUploadMode="OnPageLoad">
-                            <AdvancedModeSettings EnableMultiSelect="True"/>
-                        </dx:ASPxUploadControl>
-                    </td>
-                </tr>
-                </table>--%>
             </td>
         </tr>
         <tr>
@@ -1633,96 +1618,6 @@
             <td colspan="5">
             </td>
         </tr>
-        <%--<tr>
-            <td>
-                Scan KTP
-            </td>
-            <td>
-                :
-            </td>
-            <td colspan="3">
-                <asp:FileUpload runat="server" ID="FileKTP" width="100%"/>
-            </td>
-            <td>
-            </td>
-            <td colspan="5">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Scan Kartu Keluarga
-            </td>
-            <td>
-                :
-            </td>
-            <td colspan="3">
-                <asp:FileUpload runat="server" ID="FileKK" width="100%"/>
-            </td>
-            <td>
-            </td>
-            <td colspan="5">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Scan NPWP
-            </td>
-            <td>
-                :
-            </td>
-            <td colspan="3">
-                <asp:FileUpload runat="server" ID="FileNPWP" width="100%"/>
-            </td>
-            <td>
-            </td>
-            <td colspan="5">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Scan Ijazah Pendidikan Terakhir
-            </td>
-            <td>
-                :
-            </td>
-            <td colspan="3">
-                <asp:FileUpload runat="server" ID="FileIjazah" width="100%"/>
-            </td>
-            <td>
-            </td>
-            <td colspan="5">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Scan Transkrip Nilai
-            </td>
-            <td>
-                :
-            </td>
-            <td colspan="3">
-                <asp:FileUpload runat="server" ID="FileTranskripNilai" width="100%"/>
-            </td>
-            <td>
-            </td>
-            <td colspan="5">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Scan Sertifikat Keahlian
-            </td>
-            <td>
-                :
-            </td>
-            <td colspan="3">
-                <asp:FileUpload ID="FileSertifikat" runat="server" Width="100%" multiple = "multiple" />                
-            </td>
-            <td>
-            </td>
-            <td colspan="5">
-            </td>
-        </tr>--%>
         <tr>
             <td colspan="11" style="border-top:2px; border-top-style:solid; border-top-color:Black; padding-top:5px;">
             </td>
