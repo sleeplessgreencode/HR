@@ -3,7 +3,6 @@ Imports DevExpress.Web
 Public Class FrmKaryawan
     Inherits System.Web.UI.Page
     Dim Conn As New SqlClient.SqlConnection
-
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Session("User") = "" Then
             Response.Redirect("Default.aspx")
@@ -162,7 +161,8 @@ Public Class FrmKaryawan
                                "EmpPekerjaanMinarta.KPI, " & _
                                "EmpPekerjaanMinarta.Atasan " & _
                                "FROM EmpPekerjaanMinarta " & _
-                               "WHERE NIK=@P1"
+                               "WHERE NIK=@P1 " & _
+                               "ORDER BY EmpPekerjaanMinarta.PrdAwal DESC"
                 .Parameters.AddWithValue("@P1", masterKey)
             End With
             Using DaGrid As New SqlClient.SqlDataAdapter
@@ -194,7 +194,8 @@ Public Class FrmKaryawan
                                "EmpPekerjaanH.Jabatan, " & _
                                "EmpPekerjaanH.UraianPekerjaan as [Uraian Pekerjaan] " & _
                                "FROM EmpPekerjaanH " & _
-                               "WHERE NIK=@P1"
+                               "WHERE NIK=@P1 " & _
+                               "ORDER BY EmpPekerjaanH.PrdAwal DESC"
                 .Parameters.AddWithValue("@P1", masterKey)
             End With
             Using DaGrid As New SqlClient.SqlDataAdapter

@@ -37,6 +37,7 @@ Public Class FrmEntryKaryawan
             Call BindGridRwytPekerjaanMinarta()
             Call BindGridDP()
             Call BindData()
+            Call BindCBBank()
             Call DelFile()
 
             If Session("Karyawan") = "UPD" Then
@@ -90,6 +91,9 @@ Public Class FrmEntryKaryawan
                 TxtNoTelp.Text = DataHdr("NoTelp").ToString
                 TxtLokasiKerja.Text = DataHdr("LokasiKerja").ToString
                 Session("PasFoto") = DataHdr("Foto")
+                CBBank.Value = DataHdr("Bank").ToString
+                TxtAtasNama.Text = DataHdr("AtasNama").ToString
+                TxtNoRekening.Text = DataHdr("NoRek").ToString
                 If DataHdr("Active") = "0" Then
                     DisableControls(Form)
                 End If
@@ -153,7 +157,20 @@ Public Class FrmEntryKaryawan
             CmdDataID.Dispose()
 
         End If
-
+    End Sub
+    Private Sub BindCBBank()
+        Dim CmdFind As New SqlClient.SqlCommand
+        With CmdFind
+            .Connection = Conn
+            .CommandType = CommandType.Text
+            .CommandText = "SELECT DISTINCT Bank FROM Bank"
+            Using RsFind As SqlClient.SqlDataReader = CmdFind.ExecuteReader
+                While RsFind.Read
+                    CBBank.Items.Add(RsFind("Bank"))
+                End While
+            End Using
+        End With
+        'CBBank.SelectedIndex = 0
     End Sub
     Private Sub BindGridKeluarga()
         Dim UpdateNIK As String = Session("NIK")
@@ -381,7 +398,6 @@ Public Class FrmEntryKaryawan
         TxtInstitusiPendidikan.Text = ""
         TxtAlamatInstitusiPendidikan.Text = ""
         TxtJurusanPendidikan.Text = ""
-        'TxtLlsTdkLlsPendidikan.Text = ""
         TxtNilaiPendidikan.Text = ""
         TxtNoIjazahPendidikan.Text = ""
         PopEntPendidikan.ShowOnPageLoad = True
@@ -427,9 +443,7 @@ Public Class FrmEntryKaryawan
         TxtGajiRwytPekerjaanMinarta.Text = ""
         TxtTunjanganRwytPekerjaanMinarta.Text = ""
         TxtKPIRwytPekerjaanMinarta.Text = ""
-        'TxtTesKesehatanRwytPekerjaanMinarta.Text = ""
         TxtHasilKesehatanRwytPekerjaanMinarta.Text = ""
-        'TxtTesPsikologiRwytPekerjaanMinarta.Text = ""
         TxtHasilPsikologiRwytPekerjaanMinarta.Text = ""
         TxtAtasanRwytPekerjaanMinarta.Text = ""
         TxtUraianRwytPekerjaanMinarta.Text = ""
@@ -678,7 +692,7 @@ Public Class FrmEntryKaryawan
 
     Protected Sub BtnSaveDataEntry_Click(sender As Object, e As System.EventArgs) Handles BtnSaveDataEntry.Click
         If TxtNIK.Text = String.Empty Then
-            LblErr.Text = "Pas Foto hanya mendukung file dengan ext. JPG/JPEG."
+            LblErr.Text = "No NIK belum diinput atau halaman belum diload dengan sempurna."
             ErrMsg.ShowOnPageLoad = True
             Exit Sub
         End If        
@@ -742,15 +756,15 @@ Public Class FrmEntryKaryawan
                 End Using
                 .CommandText = "INSERT INTO Karyawan (NIK, Nama, Kelamin, TmpLahir, TglLahir, WN, StsNikah, TglNikah, " & _
                             "Agama, Alamat, Provinsi, Kota, AlamatSurat, Email, NoTelp, LokasiKerja, Divisi, " & _
-                            "Subdivisi, Jabatan, Golongan, Grade, PrdAwal, UraianPekerjaan, Foto, UserEntry,TimeEntry) " & _
+                            "Subdivisi, Jabatan, Golongan, Grade, PrdAwal, UraianPekerjaan, Foto, Bank, AtasNama, NoRek, UserEntry,TimeEntry) " & _
                             "VALUES (@P1, @P2, @P3, @P4, @P5, @P6, @P7, @P8, @P9, @P10, @P11, @P12, @P13, @P14, @P15, @P16, " & _
-                            "@P17, @P18, @P19, @P20, @P21, @P22, @P23, @P24, @P25,@P26)"
+                            "@P17, @P18, @P19, @P20, @P21, @P22, @P23, @P24, @P25,@P26, @P27, @P28, @P29)"
             Else
                 Dim UpdateNIK As String = Session("NIK")
                 .CommandText = "UPDATE Karyawan SET Nama=@P2, Kelamin=@P3, TmpLahir=@P4, TglLahir=@P5, WN=@P6, StsNikah=@P7, TglNikah=@P8, " & _
                             "Agama=@P9, Alamat=@P10, Provinsi=@P11, Kota=@P12, AlamatSurat=@P13, Email=@P14, NoTelp=@P15, LokasiKerja=@P16, Divisi=@P17, " & _
                             "Subdivisi=@P18, Jabatan=@P19, Golongan=@P20, Grade=@P21, PrdAwal=@P22, UraianPekerjaan=@P23, Foto=@P24, " & _
-                            "UserEntry=@P25,TimeEntry=@P26 WHERE NIK=@P1"
+                            "Bank=@P25, AtasNama=@P26, NoRek=@P27, UserEntry=@P28,TimeEntry=@P29 WHERE NIK=@P1"
             End If
             .Parameters.AddWithValue("@P1", TxtNIK.Text)
             .Parameters.AddWithValue("@P2", TxtNama.Text)
@@ -799,8 +813,11 @@ Public Class FrmEntryKaryawan
                     End If
                 Next
             End If
-            .Parameters.AddWithValue("@P25", Session("User").ToString.Split("|")(0))
-            .Parameters.AddWithValue("@P26", Now)
+            .Parameters.AddWithValue("@P25", If(CBBank.Value = String.Empty, DBNull.Value, CBBank.Value))
+            .Parameters.AddWithValue("@P26", TxtAtasNama.Text)
+            .Parameters.AddWithValue("@P27", TxtNoRekening.Text)
+            .Parameters.AddWithValue("@P28", Session("User").ToString.Split("|")(0))
+            .Parameters.AddWithValue("@P29", Now)
             .ExecuteNonQuery()
             .Dispose()
         End With
@@ -1399,7 +1416,6 @@ Public Class FrmEntryKaryawan
     End Sub
 
     Private Sub DisableControls(control As System.Web.UI.Control)
-
         For Each c As System.Web.UI.Control In control.Controls
             ' Get the Enabled property by reflection.
             Dim type As Type = c.GetType
@@ -1421,5 +1437,4 @@ Public Class FrmEntryKaryawan
         BtnCancelDataEntry.Enabled = True        
 
     End Sub
-
 End Class

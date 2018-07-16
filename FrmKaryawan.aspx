@@ -141,7 +141,7 @@
                             <ContentCollection>
                                 <dx:ContentControl>
                                     <dx:ASPxGridView ID="GridMinarta" ClientInstanceName="GridMinarta" runat="server" KeyFieldName="NIK" EnableRowCache="true" AutoGenerateColumns="true" Theme="MetropolisBlue" Width="100%" OnCustomCallback="GridMinarta_CustomCallback" OnDataBound="GridMinarta_DataBound">
-                                    <SettingsBehavior AllowFocusedRow="true" />
+                                    <SettingsBehavior AllowFocusedRow="true" AllowSort="false"/>
                                     <SettingsSearchPanel Visible="true" ShowApplyButton="true" ShowClearButton="true" />
                                     </dx:ASPxGridView>
                                 </dx:ContentControl>
@@ -151,7 +151,7 @@
                             <ContentCollection>
                                 <dx:ContentControl>
                                     <dx:ASPxGridView ID="GridRwytPekerjaan" ClientInstanceName="GridRwytPekerjaan" runat="server" KeyFieldName="NIK" EnableRowCache="true" AutoGenerateColumns="true" Theme="MetropolisBlue" Width="100%" OnCustomCallback="GridRwytPekerjaan_CustomCallback" OnDataBound="GridRwytPekerjaan_DataBound">
-                                    <SettingsBehavior AllowFocusedRow="true" />
+                                    <SettingsBehavior AllowFocusedRow="true" AllowSort="false"/>
                                     <SettingsSearchPanel Visible="true" ShowApplyButton="true" ShowClearButton="true" />
                                     </dx:ASPxGridView>
                                 </dx:ContentControl>
@@ -161,7 +161,7 @@
                             <ContentCollection>
                                 <dx:ContentControl>
                                     <dx:ASPxGridView ID="GridPendidikan" ClientInstanceName="GridPendidikan" runat="server" KeyFieldName="NIK" EnableRowCache="true" AutoGenerateColumns="true" Theme="MetropolisBlue" Width="100%" OnCustomCallback="GridPendidikan_CustomCallback" OnDataBound="GridPendidikan_DataBound">
-                                    <SettingsBehavior AllowFocusedRow="true" />
+                                    <SettingsBehavior AllowFocusedRow="true" AllowSort="false"/>
                                     <SettingsSearchPanel Visible="true" ShowApplyButton="true" ShowClearButton="true" />
                                     </dx:ASPxGridView>
                                 </dx:ContentControl>
@@ -171,7 +171,7 @@
                             <ContentCollection>
                                 <dx:ContentControl>
                                     <dx:ASPxGridView ID="GridKetrampilan" ClientInstanceName="GridKetrampilan" runat="server" KeyFieldName="NIK" EnableRowCache="true" AutoGenerateColumns="true" Theme="MetropolisBlue" Width="100%" OnCustomCallback="GridKetrampilan_CustomCallback" OnDataBound="GridKetrampilan_DataBound">
-                                    <SettingsBehavior AllowFocusedRow="true" />
+                                    <SettingsBehavior AllowFocusedRow="true" AllowSort="false"/>
                                     <SettingsSearchPanel Visible="true" ShowApplyButton="true" ShowClearButton="true" />
                                     </dx:ASPxGridView>
                                 </dx:ContentControl>
@@ -181,7 +181,7 @@
                             <ContentCollection>
                                 <dx:ContentControl>
                                     <dx:ASPxGridView ID="GridIdentitas" ClientInstanceName="GridIdentitas" runat="server" KeyFieldName="NIK" EnableRowCache="true" AutoGenerateColumns="true" Theme="MetropolisBlue" Width="100%" OnCustomCallback="GridIdentitas_CustomCallback" OnDataBound="GridIdentitas_DataBound">
-                                    <SettingsBehavior AllowFocusedRow="true" />
+                                    <SettingsBehavior AllowFocusedRow="true" AllowSort="false"/>
                                     <SettingsSearchPanel Visible="true" ShowApplyButton="true" ShowClearButton="true" />
                                     </dx:ASPxGridView>
                                 </dx:ContentControl>
@@ -191,7 +191,7 @@
                             <ContentCollection>
                                 <dx:ContentControl>
                                     <dx:ASPxGridView ID="GridKeluarga" ClientInstanceName="GridKeluarga" runat="server" KeyFieldName="NIK" EnableRowCache="true" AutoGenerateColumns="true" Theme="MetropolisBlue" Width="100%" OnCustomCallback="GridKeluarga_CustomCallback" OnDataBound="GridKeluarga_DataBound">
-                                    <SettingsBehavior AllowFocusedRow="true" />
+                                    <SettingsBehavior AllowFocusedRow="true" AllowSort="false"/>
                                     <SettingsSearchPanel Visible="true" ShowApplyButton="true" ShowClearButton="true" />
                                     </dx:ASPxGridView>
                                 </dx:ContentControl>
@@ -212,7 +212,9 @@
                                                 <Settings AutoFilterCondition="Contains" HeaderFilterMode="CheckedList" />
                                             </dx:GridViewDataTextColumn>
                                         </Columns>
-                                        <Settings ShowFilterRow="True" ShowFooter="true" HorizontalScrollBarMode="Visible" ShowHeaderFilterButton="true" />                                        
+                                        <Settings ShowFilterRow="True" ShowFooter="true" HorizontalScrollBarMode="Visible" ShowHeaderFilterButton="true" />
+                                        <SettingsPager Mode="ShowAllRecords"></SettingsPager>
+                                        <SettingsBehavior AllowFocusedRow="true" AllowSort="false"/>                                        
                                         <ClientSideEvents EndCallback="function(s, e) { if (s.cpOpenWindow != null) window.open(s.cpOpenWindow, 'newwindow', 'width=800px, height=600px', 'menubar=no'); }" />
                                     </dx:ASPxGridView>
                                 </dx:ContentControl>

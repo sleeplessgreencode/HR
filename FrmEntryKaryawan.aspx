@@ -1480,7 +1480,7 @@
             </td>
             <td colspan="3">
                 <dx:aspxTextBox runat="server" id="TxtEmail" Theme="MetropolisBlue" 
-                    Width="100%" MaxLength="30">
+                    Width="100%" MaxLength="50">
                 </dx:aspxTextBox>
             </td>
             <td>
@@ -1565,6 +1565,54 @@
                     </td>
                 </tr>
                 </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Bank
+            </td>
+            <td>
+                :
+            </td>
+            <td colspan="3">
+                <dx:ASPxComboBox ID="CBBank" runat="server" ValueType="System.String" Theme="MetropolisBlue" SelectedIndex="1">
+                </dx:ASPxComboBox>
+            </td>
+            <td>
+            </td>
+            <td colspan="5">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Atas nama
+            </td>
+            <td>
+                :
+            </td>
+            <td colspan="3">
+                <dx:ASPxTextBox ID="TxtAtasNama" runat="server" Theme="MetropolisBlue" MaxLength="100" Width="100%">
+                </dx:ASPxTextBox>
+            </td>
+            <td>
+            </td>
+            <td colspan="5">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nomor rekening
+            </td>
+            <td>
+                :
+            </td>
+            <td colspan="3">
+                <dx:ASPxTextBox ID="TxtNoRekening" runat="server" Theme="MetropolisBlue" MaxLength="30" Width="100%">
+                </dx:ASPxTextBox>
+            </td>
+            <td>
+            </td>
+            <td colspan="5">
             </td>
         </tr>
         <tr>

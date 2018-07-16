@@ -1265,6 +1265,33 @@ Partial Public Class FrmEntryKaryawan
     Protected WithEvents TxtDiterbitkanOlehSIMC As Global.DevExpress.Web.ASPxTextBox
 
     '''<summary>
+    '''CBBank control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CBBank As Global.DevExpress.Web.ASPxComboBox
+
+    '''<summary>
+    '''TxtAtasNama control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtAtasNama As Global.DevExpress.Web.ASPxTextBox
+
+    '''<summary>
+    '''TxtNoRekening control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents TxtNoRekening As Global.DevExpress.Web.ASPxTextBox
+
+    '''<summary>
     '''PasFoto control.
     '''</summary>
     '''<remarks>

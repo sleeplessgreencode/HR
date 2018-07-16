@@ -1463,6 +1463,30 @@ TxtDiterbitkanOlehSIMC control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.CBBank">
+	<summary>
+CBBank control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtAtasNama">
+	<summary>
+TxtAtasNama control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmEntryKaryawan.TxtNoRekening">
+	<summary>
+TxtNoRekening control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:HR_ASPNET.FrmEntryKaryawan.PasFoto">
 	<summary>
 PasFoto control.
