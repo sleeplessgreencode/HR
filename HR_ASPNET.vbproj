@@ -125,6 +125,7 @@
     <Content Include="FrmRptAbsensiKaryawan.aspx" />
     <Content Include="FrmRptRekapAbsensi.aspx" />
     <Content Include="FrmSetupAkses.aspx" />
+    <Content Include="FrmSkorKehadiran.aspx" />
     <Content Include="FrmView.aspx" />
     <Content Include="Images\login-bg.jpg" />
     <Content Include="js\jquery-3.2.0.min.js" />
@@ -141,6 +142,11 @@
     <Content Include="FrmKaryawan.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet\DsSkorKehadiran.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsSkorKehadiran.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSet\DsStsAbsensi.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -247,6 +253,13 @@
       <DependentUpon>FrmSetupAkses.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="FrmSkorKehadiran.aspx.designer.vb">
+      <DependentUpon>FrmSkorKehadiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSkorKehadiran.aspx.vb">
+      <DependentUpon>FrmSkorKehadiran.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="FrmView.aspx.designer.vb">
       <DependentUpon>FrmView.aspx</DependentUpon>
     </Compile>
@@ -298,6 +311,12 @@
       <DependentUpon>RptRekapStatusAbsensi.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report\RptSkorKehadiran.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSkorKehadiran.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Site1.Master.designer.vb">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
@@ -344,8 +363,23 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RptRekapStatusAbsensi.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\RptSkorKehadiran.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSkorKehadiran.vb</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="DataSet\DsSkorKehadiran.xsc">
+      <DependentUpon>DsSkorKehadiran.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DsSkorKehadiran.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsSkorKehadiran.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet\DsSkorKehadiran.xss">
+      <DependentUpon>DsSkorKehadiran.xsd</DependentUpon>
+    </None>
     <None Include="DataSet\DsStsAbsensi.xsc">
       <DependentUpon>DsStsAbsensi.xsd</DependentUpon>
     </None>

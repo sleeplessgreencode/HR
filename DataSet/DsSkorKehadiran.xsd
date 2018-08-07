@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsSkorKehadiran" targetNamespace="http://tempuri.org/DsSkorKehadiran.xsd" xmlns:mstns="http://tempuri.org/DsSkorKehadiran.xsd" xmlns="http://tempuri.org/DsSkorKehadiran.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsSkorKehadiran" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsSkorKehadiran" msprop:Generator_UserDSName="DsSkorKehadiran">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SkorKehadiran" msprop:Generator_TableClassName="SkorKehadiranDataTable" msprop:Generator_TableVarName="tableSkorKehadiran" msprop:Generator_TablePropName="SkorKehadiran" msprop:Generator_RowDeletingName="SkorKehadiranRowDeleting" msprop:Generator_RowChangingName="SkorKehadiranRowChanging" msprop:Generator_RowEvHandlerName="SkorKehadiranRowChangeEventHandler" msprop:Generator_RowDeletedName="SkorKehadiranRowDeleted" msprop:Generator_UserTableName="SkorKehadiran" msprop:Generator_RowChangedName="SkorKehadiranRowChanged" msprop:Generator_RowEvArgName="SkorKehadiranRowChangeEvent" msprop:Generator_RowClassName="SkorKehadiranRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NIK" msprop:Generator_ColumnVarNameInTable="columnNIK" msprop:Generator_ColumnPropNameInRow="NIK" msprop:Generator_ColumnPropNameInTable="NIKColumn" msprop:Generator_UserColumnName="NIK" type="xs:string" minOccurs="0" />
+              <xs:element name="Nama" msprop:Generator_ColumnVarNameInTable="columnNama" msprop:Generator_ColumnPropNameInRow="Nama" msprop:Generator_ColumnPropNameInTable="NamaColumn" msprop:Generator_UserColumnName="Nama" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalMasuk" msprop:Generator_ColumnVarNameInTable="columnTotalMasuk" msprop:Generator_ColumnPropNameInRow="TotalMasuk" msprop:Generator_ColumnPropNameInTable="TotalMasukColumn" msprop:Generator_UserColumnName="TotalMasuk" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalSakit" msprop:Generator_ColumnVarNameInTable="columnTotalSakit" msprop:Generator_ColumnPropNameInRow="TotalSakit" msprop:Generator_ColumnPropNameInTable="TotalSakitColumn" msprop:Generator_UserColumnName="TotalSakit" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalDinas" msprop:Generator_ColumnVarNameInTable="columnTotalDinas" msprop:Generator_ColumnPropNameInRow="TotalDinas" msprop:Generator_ColumnPropNameInTable="TotalDinasColumn" msprop:Generator_UserColumnName="TotalDinas" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalIjinSetengah" msprop:Generator_ColumnVarNameInTable="columnTotalIjinSetengah" msprop:Generator_ColumnPropNameInRow="TotalIjinSetengah" msprop:Generator_ColumnPropNameInTable="TotalIjinSetengahColumn" msprop:Generator_UserColumnName="TotalIjinSetengah" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalCuti" msprop:Generator_ColumnVarNameInTable="columnTotalCuti" msprop:Generator_ColumnPropNameInRow="TotalCuti" msprop:Generator_ColumnPropNameInTable="TotalCutiColumn" msprop:Generator_UserColumnName="TotalCuti" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalAlpa" msprop:Generator_ColumnVarNameInTable="columnTotalAlpa" msprop:Generator_ColumnPropNameInRow="TotalAlpa" msprop:Generator_ColumnPropNameInTable="TotalAlpaColumn" msprop:Generator_UserColumnName="TotalAlpa" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalIjin" msprop:Generator_ColumnVarNameInTable="columnTotalIjin" msprop:Generator_ColumnPropNameInRow="TotalIjin" msprop:Generator_ColumnPropNameInTable="TotalIjinColumn" msprop:Generator_UserColumnName="TotalIjin" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalMedicalRS" msprop:Generator_ColumnVarNameInTable="columnTotalMedicalRS" msprop:Generator_ColumnPropNameInRow="TotalMedicalRS" msprop:Generator_ColumnPropNameInTable="TotalMedicalRSColumn" msprop:Generator_UserColumnName="TotalMedicalRS" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalTelat" msprop:Generator_ColumnVarNameInTable="columnTotalTelat" msprop:Generator_ColumnPropNameInRow="TotalTelat" msprop:Generator_ColumnPropNameInTable="TotalTelatColumn" msprop:Generator_UserColumnName="TotalTelat" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPulangCepat" msprop:Generator_ColumnVarNameInTable="columnTotalPulangCepat" msprop:Generator_ColumnPropNameInRow="TotalPulangCepat" msprop:Generator_ColumnPropNameInTable="TotalPulangCepatColumn" msprop:Generator_UserColumnName="TotalPulangCepat" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalScore" msprop:Generator_ColumnVarNameInTable="columnTotalScore" msprop:Generator_ColumnPropNameInRow="TotalScore" msprop:Generator_ColumnPropNameInTable="TotalScoreColumn" msprop:Generator_UserColumnName="TotalScore" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

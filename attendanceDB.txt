@@ -1,0 +1,31 @@
+What statuses are in the database
+Medical RS
+Ijin
+Cuti
+Sakit
+Dinas Proyek
+Ijin 1/2 Hari
+Alpa
+Masuk
+
+Statuses not in database but can be generated
+Telat
+Tidak Absen
+
+We have 2 tables, namely Absensi and HariLibur
+
+Absensi have some fields such as
+NIK
+TglMasuk
+JamMasuk
+JamKeluar
+Status
+Keterangan
+UserEntry
+TimeEntry
+
+HariLibur have some fields such as
+TglLibur
+Keterangan
+UserEntry
+TimeEntry

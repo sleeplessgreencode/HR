@@ -118,6 +118,22 @@ CRViewer control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="T:HR_ASPNET.DsSkorKehadiran.SkorKehadiranDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:HR_ASPNET.DsSkorKehadiran.SkorKehadiranRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:HR_ASPNET.DsSkorKehadiran.SkorKehadiranRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:HR_ASPNET.DsSkorKehadiran">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
 </member><member name="F:HR_ASPNET.FrmAbsensiKaryawan.ErrMsg">
 	<summary>
 ErrMsg control.
@@ -2514,6 +2530,182 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:HR_ASPNET.FrmAbsensi.GridData">
 	<summary>
 GridData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.PopEntScoring">
+	<summary>
+PopEntScoring control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.PopupControlContentControl2">
+	<summary>
+PopupControlContentControl2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiMasuk">
+	<summary>
+TxtNilaiMasuk control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiTelat">
+	<summary>
+TxtNilaiTelat control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiPulangCepat">
+	<summary>
+TxtNilaiPulangCepat control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiIjin">
+	<summary>
+TxtNilaiIjin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiCuti">
+	<summary>
+TxtNilaiCuti control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiSakit">
+	<summary>
+TxtNilaiSakit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiDinasProyek">
+	<summary>
+TxtNilaiDinasProyek control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiIjinSetengahHari">
+	<summary>
+TxtNilaiIjinSetengahHari control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiAlpa">
+	<summary>
+TxtNilaiAlpa control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiTidakAbsen">
+	<summary>
+TxtNilaiTidakAbsen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtNilaiMedicalRS">
+	<summary>
+TxtNilaiMedicalRS control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtBatasTelat">
+	<summary>
+TxtBatasTelat control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.TxtBatasPulangAwal">
+	<summary>
+TxtBatasPulangAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.BtnSave">
+	<summary>
+BtnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.BtnCancel">
+	<summary>
+BtnCancel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.PrdAwal">
+	<summary>
+PrdAwal control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.PrdAkhir">
+	<summary>
+PrdAkhir control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.BtnPrint">
+	<summary>
+BtnPrint control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.DialogWindow1">
+	<summary>
+DialogWindow1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:HR_ASPNET.FrmSkorKehadiran.msgBox1">
+	<summary>
+msgBox1 control.
 </summary>
 	<remarks>
 Auto-generated field.
